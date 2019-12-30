@@ -1,0 +1,10 @@
+def sort(nums):
+    for i in range(len(nums)-1,0,-1):
+        for j in range(i):
+            if nums[j]>nums[j+1]:
+                temps=nums[j]
+                nums[j]=nums[j+1]
+                nums[j+1]=temps
+nums=[10,80,41,20,52,45,23,78]
+sort(nums)
+print(nums)
